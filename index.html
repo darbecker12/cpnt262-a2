@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/client.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+  <title>If This, Then That</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <section class="header">
+    <H1>If This, Then That</H1>
+  </section>
+
+  <!-- Adding the range sliders -->
+  <div>
+    <label for="background">Background Colour</label>
+    <input type="range" name="hue" id="hue" default="0" min="0", max="360">
+  </div>
+  <div>
+    <label for="text">Text Colour</label>
+    <input type="range" name="hue2" id="hue2" default="0" min="0", max="360">
+  </div> 
+
+  <div class="button">
+    <button class="btnsquare">Toggle Square</button>
+    <button class="btncircle">Toggle Circle</button>
+    <button class="btntriangle">Toggle Triangle</button>
+  </div>
+  
+  <!-- Shape with class and id's -->
+  <div class="shapes">
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="triangle"></div>
+  </div>
+
+  <!-- Image Selection Form  -->
+  <div class="image-section">
+    <label for="image-select">What type of image?</label>
+      <select name="images" id="image-select">
+        <option value="">Please select an option</option>
+        <option value="1">City</option>
+        <option value="2">Nature</option>
+        <option value="3">Animals</option>
+        <option value="4">Sports</option>
+      </select>
+      <div class="city">
+      <img src="Images/City.jpg" alt="City">
+      </div>
+      <div class="nature">
+      <img src="Images/Ocean.jpg" alt="nature">
+      </div>
+      <div class="animals">
+      <img src="Images/Bear.jpg" alt="animals">
+      </div>
+      <div class="sports">
+      <img src="Images/Bike.jpg" alt="sports">
+      </div>    
+  </div>
+</body>
+</html>
